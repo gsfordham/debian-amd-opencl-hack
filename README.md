@@ -51,13 +51,15 @@ Create the following files in the directory ``/etc/OpenCL/vendors/``:
 *DO NOT KEEP THE* ``mesa-opencl-icd`` *PACKAGE INSTALLED -- REMOVE IT!*
 *(If the package is causing the issues... might be fixed, by the time you are reading this)*
 
+# TEST IT #
+To test it, you will want to install the package ``clinfo`` from the repos. Should detect your GPU, so long as your card supports OpenCL.
+
+## WHAT ELSE ##
 # KNOWN ISSUES #
 1) As of the moment, since I went through this cockamamie BS to render using the Cycles engine on Blender with GPU compute, it should be noted that *FINAL* rendering works with Cycles, but you will *VERY LIKELY* need to switch to CPU compute for viewport rendering, or Blender will freeze and/or crash, if you are using materials, textures, loaded images, or nodes.
 
 # OTHER INFORMATION #
 1) Blender's RadeonProRender will probably crash Blender. I have no idea if this is just caused by the add-on, or if it is due to how I hacked together this config.
-
-#########
 
 # HOW YOU CAN HELP #
 If you happen to notice any further ways to improve this hack, please let me know, and I might test it out. This is certainly not the end-all be-all of bodging this mess together, and one of you persistent mofos could very well come up with a way to get better results.

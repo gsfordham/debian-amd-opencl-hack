@@ -44,11 +44,13 @@ Create the following files in the directory ``/etc/OpenCL/vendors/``:
 1) ``amdpro.icd`` with the contents: [path/to/drivers]/libamdocl64.so
 1) ``amdpro12.icd`` with the contents: [path/to/drivers]/libamdocl12cl64.so
 1) ``amdpro-orca.icd`` with the contents: [path/to/drivers]/libamdocl-orca64.so
+
 *(Again, assuming you are using the 64-bit drivers)*
 
 *Please note that the name of the ICD files do not actually matter -- this is just what I named them. As long as they point to the correct* ``.so`` *files, they will still work.*
 
 *DO NOT KEEP THE* ``mesa-opencl-icd`` *PACKAGE INSTALLED -- REMOVE IT!*
+
 *(If the package is causing the issues... might be fixed, by the time you are reading this)*
 
 # TEST IT #
